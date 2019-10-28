@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<script>
+         document.documentElement.setAttribute(
+        'data-theme',
+        localStorage.theme || 'dark'
+      )
+</script>
+<head>
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <form onsubmit="GeneratePassword(); return false;">
+        <input type="number" id="quantity" value="8" min="1" max="80">
+        <input type="submit" value="Generate Password">
+    </form>
+    <br>
+    <table id="PswdTbl">
+        <tr>
+            <th>Passwords Generated</th>
+        </tr>
+    </table>
+</body>
+<script src="js/main.js"></script>
+
+</html>
