@@ -1,28 +1,49 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
 <script>
-         document.documentElement.setAttribute(
+    document.documentElement.setAttribute(
         'data-theme',
         localStorage.theme || 'dark'
-      )
+    )
 </script>
+
 <head>
     <title>Password Generator</title>
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
-    <form onsubmit="GeneratePassword(); return false;">
-        <input type="number" id="quantity" value="8" min="1" max="80">
-        <input type="submit" value="Generate Password">
-    </form>
+    <div class="settings-container">
+        <h1>Password Settings</h1>
+        <div class="generate">
+            <h1></h1>
+            <form onsubmit="GeneratePassword(); return false;">
+
+                <p>Number of Characters in Password:</p>
+                <input type="range" name="" id="quantity" value="12" min="1" max="80">
+                <p id="range-output"></p>
+
+                <input type="checkbox" name="" id="" value="">
+                <input type="checkbox" name="" id="" value="">
+                <input type="checkbox" name="" id="" value="">
+                <input type="checkbox" name="" id="" value="">
+
+
+                <input type="submit" value="Generate Password">
+            </form>
+        </div>
+
+    </div>
+
     <br>
-    <table id="PswdTbl">
-        <tr>
-            <th>Passwords Generated</th>
-        </tr>
-    </table>
+
+    <div class="container">
+        <h1>Passwords Generated</h1>
+        <table id="PswdTbl">
+        </table>
+    </div>
 </body>
 <script src="js/main.js"></script>
+<script src="js/form.js"></script>
 
 </html>

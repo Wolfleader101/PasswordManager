@@ -3,6 +3,7 @@ console.log("%cDo not paste any code here!!!", "font-size:40px; font-weight: bol
 console.log("%cThis is a feature intended for developers.", "font-size:25px; font-weight: bold; color: orange;")
 console.log("%c If someone told you to paste something in here they are 1000% scamming you!!", "font-size:25px; font-weight: bold; color: aqua;");
 console.log("%c>> Ignore everything below <<", "font-size:16px; font-weight: bold;");
+
 /*
 TODO:
 *add settings
