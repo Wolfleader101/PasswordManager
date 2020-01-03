@@ -6,6 +6,7 @@
         localStorage.theme || 'dark'
     )
 </script>
+<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 
 <head>
     <title>Password Generator</title>
@@ -19,16 +20,16 @@
             <h1></h1>
             <form onsubmit="GeneratePassword(); return false;">
 
-                <p>Number of Characters in Password:</p>
+                <h3>Number of Characters in Password:</h3>
                 <input type="range" name="" id="quantity" value="12" min="1" max="80">
                 <p id="range-output"></p>
 
-                <input type="checkbox" name="" id="" value="">
-                <input type="checkbox" name="" id="" value="">
-                <input type="checkbox" name="" id="" value="">
-                <input type="checkbox" name="" id="" value="">
+                <input type="checkbox" name="" id="" value="">Lowercase<br>
+                <input type="checkbox" name="" id="" value="">Uppercase<br>
+                <input type="checkbox" name="" id="" value="">Numbers<br>
+                <input type="checkbox" name="" id="" value="">Symbols<br>
 
-
+                <br>
                 <input type="submit" value="Generate Password">
             </form>
         </div>

@@ -24,12 +24,8 @@
   body {
     color: var(--main-color);
     background-color: var(--background-color);
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
   }
-
-
-
-
 
 .generate {
     padding: 1em;
@@ -42,6 +38,13 @@
     border: 3px solid white;
 
     h1 {
+      text-align: center;
+    }
+
+    #range-output {
+      border: 4px solid #607a97;
+      border-radius: 8px;
+      width: 5%;
       text-align: center;
     }
 
