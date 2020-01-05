@@ -35,7 +35,7 @@ function GeneratePassword() {
     let PswdString = document.createTextNode(Pswd);
     let Lbreak = document.createElement("br");
 
-    console.log(Pswd);
+    //console.log(Pswd);
     document.getElementById("PswdTbl").appendChild(PswdHtml).appendChild(PswdString);
     document.getElementById("PswdTbl").appendChild(Lbreak);
 }
