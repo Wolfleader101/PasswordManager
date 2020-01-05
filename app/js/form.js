@@ -6,3 +6,8 @@ output.innerHTML = slider.value; // Display the default slider value
 slider.oninput = function() {
   output.innerHTML = this.value;
 }
+
+lowercase = document.getElementById("lowercase").checked;
+uppercase = document.getElementById("uppercase").checked;
+numbers = document.getElementById("numbers").checked;
+symbols = document.getElementById("symbols").checked;
