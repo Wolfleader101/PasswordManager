@@ -9,6 +9,6 @@
   "author": "Wolfleader101",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^5.0.3"
+    "electron": "^8.0.1"
   }
 }
